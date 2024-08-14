@@ -28,6 +28,15 @@ class RomanNumeralServiceTest {
         assertEquals("Error: Number out of range. must be between 1 and 3999", exception.getMessage());
     }
 
+     @Test
+    public void testConvertToRomanNumeralQueryWithArithemeticOperations() {
+        Exception exception = assertThrows(Exception.class, () -> {
+            romanNumeralService.processRomanNumeralRequest("1+1", null, null);
+        });
+        assertEquals("Error: Invalid input", exception.getMessage());
+    }
+
+
     @Test
     public void testConvertToRomanNumeralQueryWithNegativeNumber() {
         Exception exception = assertThrows(Exception.class, () -> {
