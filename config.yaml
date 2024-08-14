@@ -1,0 +1,3 @@
+# Using default rules so we can scrape all metrics
+rules:
+- pattern: ".*"

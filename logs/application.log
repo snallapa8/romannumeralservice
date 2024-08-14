@@ -1,0 +1,118 @@
+2024-08-13T20:40:33.102-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.c.RomanNumeralControllerTest       : Starting RomanNumeralControllerTest using Java 21.0.1 with PID 34214 (started by sai in /Users/sai/Documents/romannumeralservice)
+2024-08-13T20:40:33.103-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.c.RomanNumeralControllerTest       : No active profile set, falling back to 1 default profile: "default"
+2024-08-13T20:40:33.113-05:00 DEBUG 34214 --- [romannumeralservice] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5bd73d1a
+2024-08-13T20:40:33.988-05:00 DEBUG 34214 --- [romannumeralservice] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-08-13T20:40:34.032-05:00 DEBUG 34214 --- [romannumeralservice] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-13T20:40:34.052-05:00 DEBUG 34214 --- [romannumeralservice] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-13T20:40:34.072-05:00 DEBUG 34214 --- [romannumeralservice] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-13T20:40:34.264-05:00 DEBUG 34214 --- [romannumeralservice] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-08-13T20:40:34.265-05:00  INFO 34214 --- [romannumeralservice] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-08-13T20:40:34.265-05:00  INFO 34214 --- [romannumeralservice] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-08-13T20:40:34.272-05:00  INFO 34214 --- [romannumeralservice] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2024-08-13T20:40:34.280-05:00  INFO 34214 --- [romannumeralservice] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 14 ms
+2024-08-13T20:40:34.323-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.c.RomanNumeralControllerTest       : Started RomanNumeralControllerTest in 1.424 seconds (process running for 2.266)
+2024-08-13T20:40:35.005-05:00 DEBUG 34214 --- [romannumeralservice] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.adobe.romannumeralservice.controllers.RomanNumeralController#home()
+2024-08-13T20:40:35.017-05:00 DEBUG 34214 --- [romannumeralservice] [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-08-13T20:40:35.017-05:00 DEBUG 34214 --- [romannumeralservice] [main] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Welcome to the Roman Numeral Converter API.<br>Use /romannumeral?query=INPUT_NUMBER to convert a spe (truncated)..."]
+2024-08-13T20:40:35.036-05:00 DEBUG 34214 --- [romannumeralservice] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.adobe.romannumeralservice.controllers.RomanNumeralController#getRomanNumeral(String, String, String)
+2024-08-13T20:40:35.043-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.c.RomanNumeralController           : Received request - query: null, min: 1, max: 5
+2024-08-13T20:40:35.045-05:00  INFO 34214 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-1] c.a.r.services.RomanNumeralService       : Converting number: 1
+2024-08-13T20:40:35.045-05:00  INFO 34214 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-2] c.a.r.services.RomanNumeralService       : Converting number: 2
+2024-08-13T20:40:35.045-05:00  INFO 34214 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-1] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: I
+2024-08-13T20:40:35.045-05:00  INFO 34214 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-3] c.a.r.services.RomanNumeralService       : Converting number: 3
+2024-08-13T20:40:35.045-05:00  INFO 34214 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-2] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: II
+2024-08-13T20:40:35.045-05:00  INFO 34214 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-3] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: III
+2024-08-13T20:40:35.045-05:00  INFO 34214 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-1] c.a.r.services.RomanNumeralService       : Converting number: 5
+2024-08-13T20:40:35.045-05:00  INFO 34214 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-4] c.a.r.services.RomanNumeralService       : Converting number: 4
+2024-08-13T20:40:35.045-05:00  INFO 34214 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-1] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: V
+2024-08-13T20:40:35.045-05:00  INFO 34214 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-4] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: IV
+2024-08-13T20:40:35.051-05:00 DEBUG 34214 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-13T20:40:35.051-05:00 DEBUG 34214 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{conversions=[{input=1, output=I}, {input=2, output=II}, {input=3, output=III}, {input=4, output=IV} (truncated)...]
+2024-08-13T20:40:35.085-05:00 DEBUG 34214 --- [romannumeralservice] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.adobe.romannumeralservice.controllers.RomanNumeralController#getRomanNumeral(String, String, String)
+2024-08-13T20:40:35.085-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.c.RomanNumeralController           : Received request - query: 1, min: 5, max: 1
+2024-08-13T20:40:35.086-05:00 DEBUG 34214 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-08-13T20:40:35.086-05:00 DEBUG 34214 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Error: Invalid parameters. Please provide either 'query' or both 'min' and 'max'."]
+2024-08-13T20:40:35.088-05:00 DEBUG 34214 --- [romannumeralservice] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.adobe.romannumeralservice.controllers.RomanNumeralController#getRomanNumeral(String, String, String)
+2024-08-13T20:40:35.088-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.c.RomanNumeralController           : Received request - query: null, min: 5, max: 1
+2024-08-13T20:40:35.089-05:00 DEBUG 34214 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-08-13T20:40:35.089-05:00 DEBUG 34214 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Error: Invalid range: 'min' should be less than 'max'."]
+2024-08-13T20:40:35.091-05:00 DEBUG 34214 --- [romannumeralservice] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.adobe.romannumeralservice.controllers.RomanNumeralController#getRomanNumeral(String, String, String)
+2024-08-13T20:40:35.091-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.c.RomanNumeralController           : Received request - query: null, min: null, max: null
+2024-08-13T20:40:35.091-05:00 DEBUG 34214 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-08-13T20:40:35.092-05:00 DEBUG 34214 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Error: Invalid parameters. Please provide either 'query' or both 'min' and 'max'."]
+2024-08-13T20:40:35.097-05:00 DEBUG 34214 --- [romannumeralservice] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.adobe.romannumeralservice.controllers.RomanNumeralController#getRomanNumeral(String, String, String)
+2024-08-13T20:40:35.097-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.c.RomanNumeralController           : Received request - query: 1, min: null, max: null
+2024-08-13T20:40:35.097-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converting number: 1
+2024-08-13T20:40:35.098-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: I
+2024-08-13T20:40:35.098-05:00 DEBUG 34214 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-13T20:40:35.098-05:00 DEBUG 34214 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{input=1, output=I}]
+2024-08-13T20:40:35.134-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converting number: 444
+2024-08-13T20:40:35.135-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: CDXLIV
+2024-08-13T20:40:35.135-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converting number: 999
+2024-08-13T20:40:35.135-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: CMXCIX
+2024-08-13T20:40:35.135-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converting number: 2024
+2024-08-13T20:40:35.135-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: MMXXIV
+2024-08-13T20:40:35.139-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converting number: 1
+2024-08-13T20:40:35.139-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: I
+2024-08-13T20:40:35.139-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converting number: 3999
+2024-08-13T20:40:35.139-05:00  INFO 34214 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: MMMCMXCIX
+2024-08-13T20:40:35.153-05:00 DEBUG 34214 --- [romannumeralservice] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@5bd73d1a, started on Tue Aug 13 20:40:33 CDT 2024
+2024-08-13T20:48:14.636-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.c.RomanNumeralControllerTest       : Starting RomanNumeralControllerTest using Java 21.0.1 with PID 34979 (started by sai in /Users/sai/Documents/adobe/Untitled/romannumeralservice)
+2024-08-13T20:48:14.638-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.c.RomanNumeralControllerTest       : No active profile set, falling back to 1 default profile: "default"
+2024-08-13T20:48:14.655-05:00 DEBUG 34979 --- [romannumeralservice] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2555fff0
+2024-08-13T20:48:15.974-05:00 DEBUG 34979 --- [romannumeralservice] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-08-13T20:48:16.048-05:00 DEBUG 34979 --- [romannumeralservice] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-13T20:48:16.073-05:00 DEBUG 34979 --- [romannumeralservice] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-13T20:48:16.102-05:00 DEBUG 34979 --- [romannumeralservice] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-13T20:48:16.429-05:00 DEBUG 34979 --- [romannumeralservice] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-08-13T20:48:16.431-05:00  INFO 34979 --- [romannumeralservice] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-08-13T20:48:16.432-05:00  INFO 34979 --- [romannumeralservice] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-08-13T20:48:16.449-05:00  INFO 34979 --- [romannumeralservice] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2024-08-13T20:48:16.465-05:00  INFO 34979 --- [romannumeralservice] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 33 ms
+2024-08-13T20:48:16.559-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.c.RomanNumeralControllerTest       : Started RomanNumeralControllerTest in 2.259 seconds (process running for 3.603)
+2024-08-13T20:48:17.614-05:00 DEBUG 34979 --- [romannumeralservice] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.adobe.romannumeralservice.controllers.RomanNumeralController#home()
+2024-08-13T20:48:17.642-05:00 DEBUG 34979 --- [romannumeralservice] [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-08-13T20:48:17.644-05:00 DEBUG 34979 --- [romannumeralservice] [main] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Welcome to the Roman Numeral Converter API.<br>Use /romannumeral?query=INPUT_NUMBER to convert a spe (truncated)..."]
+2024-08-13T20:48:17.676-05:00 DEBUG 34979 --- [romannumeralservice] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.adobe.romannumeralservice.controllers.RomanNumeralController#getRomanNumeral(String, String, String)
+2024-08-13T20:48:17.687-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.c.RomanNumeralController           : Received request - query: null, min: 1, max: 5
+2024-08-13T20:48:17.701-05:00  INFO 34979 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-1] c.a.r.services.RomanNumeralService       : Converting number: 1
+2024-08-13T20:48:17.702-05:00  INFO 34979 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-1] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: I
+2024-08-13T20:48:17.702-05:00  INFO 34979 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-1] c.a.r.services.RomanNumeralService       : Converting number: 3
+2024-08-13T20:48:17.702-05:00  INFO 34979 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-1] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: III
+2024-08-13T20:48:17.702-05:00  INFO 34979 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-1] c.a.r.services.RomanNumeralService       : Converting number: 4
+2024-08-13T20:48:17.702-05:00  INFO 34979 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-1] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: IV
+2024-08-13T20:48:17.703-05:00  INFO 34979 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-1] c.a.r.services.RomanNumeralService       : Converting number: 5
+2024-08-13T20:48:17.703-05:00  INFO 34979 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-1] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: V
+2024-08-13T20:48:17.705-05:00  INFO 34979 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-2] c.a.r.services.RomanNumeralService       : Converting number: 2
+2024-08-13T20:48:17.705-05:00  INFO 34979 --- [romannumeralservice] [ForkJoinPool.commonPool-worker-2] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: II
+2024-08-13T20:48:17.716-05:00 DEBUG 34979 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-13T20:48:17.718-05:00 DEBUG 34979 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{conversions=[{input=1, output=I}, {input=2, output=II}, {input=3, output=III}, {input=4, output=IV} (truncated)...]
+2024-08-13T20:48:17.782-05:00 DEBUG 34979 --- [romannumeralservice] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.adobe.romannumeralservice.controllers.RomanNumeralController#getRomanNumeral(String, String, String)
+2024-08-13T20:48:17.783-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.c.RomanNumeralController           : Received request - query: 1, min: 5, max: 1
+2024-08-13T20:48:17.784-05:00 DEBUG 34979 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-08-13T20:48:17.785-05:00 DEBUG 34979 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Error: Invalid parameters. Please provide either 'query' or both 'min' and 'max'."]
+2024-08-13T20:48:17.789-05:00 DEBUG 34979 --- [romannumeralservice] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.adobe.romannumeralservice.controllers.RomanNumeralController#getRomanNumeral(String, String, String)
+2024-08-13T20:48:17.789-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.c.RomanNumeralController           : Received request - query: null, min: 5, max: 1
+2024-08-13T20:48:17.790-05:00 DEBUG 34979 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-08-13T20:48:17.791-05:00 DEBUG 34979 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Error: Invalid range: 'min' should be less than 'max'."]
+2024-08-13T20:48:17.795-05:00 DEBUG 34979 --- [romannumeralservice] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.adobe.romannumeralservice.controllers.RomanNumeralController#getRomanNumeral(String, String, String)
+2024-08-13T20:48:17.796-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.c.RomanNumeralController           : Received request - query: null, min: null, max: null
+2024-08-13T20:48:17.797-05:00 DEBUG 34979 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-08-13T20:48:17.797-05:00 DEBUG 34979 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Error: Invalid parameters. Please provide either 'query' or both 'min' and 'max'."]
+2024-08-13T20:48:17.806-05:00 DEBUG 34979 --- [romannumeralservice] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.adobe.romannumeralservice.controllers.RomanNumeralController#getRomanNumeral(String, String, String)
+2024-08-13T20:48:17.806-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.c.RomanNumeralController           : Received request - query: 1, min: null, max: null
+2024-08-13T20:48:17.806-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converting number: 1
+2024-08-13T20:48:17.807-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: I
+2024-08-13T20:48:17.807-05:00 DEBUG 34979 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-13T20:48:17.808-05:00 DEBUG 34979 --- [romannumeralservice] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{input=1, output=I}]
+2024-08-13T20:48:17.873-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converting number: 444
+2024-08-13T20:48:17.873-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: CDXLIV
+2024-08-13T20:48:17.873-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converting number: 999
+2024-08-13T20:48:17.874-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: CMXCIX
+2024-08-13T20:48:17.874-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converting number: 2024
+2024-08-13T20:48:17.874-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: MMXXIV
+2024-08-13T20:48:17.881-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converting number: 1
+2024-08-13T20:48:17.884-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: I
+2024-08-13T20:48:17.884-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converting number: 3999
+2024-08-13T20:48:17.885-05:00  INFO 34979 --- [romannumeralservice] [main] c.a.r.services.RomanNumeralService       : Converted number to Roman numeral: MMMCMXCIX
+2024-08-13T20:48:17.922-05:00 DEBUG 34979 --- [romannumeralservice] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@2555fff0, started on Tue Aug 13 20:48:14 CDT 2024
